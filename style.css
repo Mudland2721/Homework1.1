@@ -3,7 +3,8 @@
 }
 
 .card-header {
-  background: gray;
+  background: rgb(78, 78, 78)
+  ;
 }
 
 .card-text {
@@ -81,3 +82,8 @@ iframe {
   margin-left: -400px;
   width: 835px;
 } 
+
+#indexBtn {
+  color: whitesmoke;
+  background-color: rgb(175, 151, 13);
+}
