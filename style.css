@@ -2,6 +2,10 @@
   margin: auto;
 }
 
+.card-header {
+  background: gray;
+}
+
 .card-text {
   margin: auto;
   font-style: inherit;
@@ -17,14 +21,33 @@
 }
 
 body {
-  background-image: url("https://images.unsplash.com/photo-1556767223-80843e91e7d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  /* Location of the image */
+  background-image: url("https://images.unsplash.com/photo-1556767223-80843e91e7d1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");;
+  
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Background image doesn't tile */
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
 }
 
+  
 header {
   background: dimgray;
-  color: white;
+  color: rgb(255, 220, 23);
+  text-align: center;
 }
 
 .card {
@@ -34,3 +57,27 @@ header {
 h5 {
   color: white;
 }
+
+#contactTittle {
+  color: black;
+}
+
+.list-group-item {
+  background: darkgray;
+}
+
+#Linkedin {
+  color: rgb(255, 220, 23);
+}
+
+iframe {
+  width:400px; 
+  height:400px; 
+  position: fixed; 
+  background-color: blue; 
+  top: 50%; 
+  left: 50%; 
+  margin-top: -100px; 
+  margin-left: -400px;
+  width: 835px;
+} 
